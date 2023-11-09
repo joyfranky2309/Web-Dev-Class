@@ -1,0 +1,22 @@
+html,
+body {
+    /* background-color: rgba(99, 212, 142, 0.212); */
+    height: 100%;
+    width: 100%;
+}
+
+.loginForm {
+    margin-top: 15rem;
+}
+
+
+.searchContainer {
+    margin-left: 23rem;
+    margin-top: 7rem;
+    position: absolute
+}
+
+.tableContainer {
+    width: 60%;
+    margin-top: 13rem;
+}
