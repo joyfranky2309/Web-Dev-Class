@@ -1,6 +1,8 @@
-html,
+html {
+    background: aliceblue;
+}
+
 body {
-    /* background-color: rgba(99, 212, 142, 0.212); */
     height: 100%;
     width: 100%;
 }
