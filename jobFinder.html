@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="assets/css/slick.css">
   <link rel="stylesheet" href="assets/css/nice-select.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/pers-css/header.css">
+  <link rel="stylesheet" href="assets/pers-css/jobFinder.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -37,9 +37,9 @@
               <div class="row align-items-center">
                 <div class="col-lg-3 col-md-2">
                   <!-- Logo -->
-                  <div class="logo">
+                  <!-- <div class="logo">
                     <a href="homePage.html"><img src="assets/images/icon.png" alt=""></a>
-                  </div>
+                  </div> -->
                 </div>
                 <div class="col-lg-9 col-md-9">
                   <div class="menu-wrapper">
@@ -80,6 +80,82 @@
         <!-- Header End -->
       </header>
 
+      <div class="searchContainer">
+      <input onkeyup="searchFilter()" type="text" id="searchText" placeholder="Search with Role">
+      <!-- <button >Click To Search</button> -->
+    </div>
+
+<div class="tableContainer table-striped">
+  <table class="table" id="searchTable">
+    <tr>
+      <th> S.No </th>
+      <th> Role </th>
+      <th> Location </th>
+      <th> Upload </th>
+    </tr>
+    <tr>
+      <td> 1. </td>
+      <td> Java Developer </td>
+      <td> Chennai </td>
+      <td> <input type="file"> </td>
+    </tr>
+    <tr>
+      <td> 2. </td>
+      <td> Salesforce Developer </td>
+      <td> Bangalore </td>
+      <td> <input type="file"> </td>
+    </tr>
+    <tr>
+      <td> 3. </td>
+      <td> Kafka Developer </td>
+      <td> Delhi </td>
+      <td> <input type="file"> </td>
+    </tr>
+    <tr>
+      <td> 4. </td>
+      <td> Java Developer </td>
+      <td> Chennai </td>
+      <td> <input type="file"> </td>
+    </tr>
+    <tr>
+      <td> 5. </td>
+      <td> FullStack Developer </td>
+      <td> Hyderabad </td>
+      <td> <input type="file"> </td>
+    </tr>
+    <tr>
+      <td> 6. </td>
+      <td> Java Developer </td>
+      <td> Bangalore </td>
+      <td> <input type="file"> </td>
+    </tr>
+    <tr>
+      <td> 7. </td>
+      <td> MERN Developer </td>
+      <td> Chennai </td>
+      <td> <input type="file"> </td>
+    </tr>
+    <tr>
+      <td> 8. </td>
+      <td> Java Developer </td>
+      <td> Delhi </td>
+      <td> <input type="file"> </td>
+    </tr>
+    <tr>
+      <td> 9. </td>
+      <td> MERN Developer </td>
+      <td> Pune </td>
+      <td> <input type="file"> </td>
+    </tr>
+    <tr>
+      <td> 10. </td>
+      <td> Java Developer </td>
+      <td> Hyderabad </td>
+      <td> <input type="file"> </td>
+    </tr>
+  </table>
+</div>
 
 
+<script src="./assets/js/jobFinder.js"></script>
 </body>

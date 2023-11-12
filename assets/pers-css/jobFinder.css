@@ -1,0 +1,14 @@
+.tableContainer {
+    padding-left: 10rem;
+    padding-right: 14rem;
+}
+
+.table {
+    border: 1px solid black;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
