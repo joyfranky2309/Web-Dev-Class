@@ -12,8 +12,7 @@ function goToSignIn() {
   if (userData) {
       const user = JSON.parse(userData);
     if (inputPassword == user.inputPassword) {
-      window.location.href('/userData.html');
-          // alert("Login successful!");
+        this.loginUser();
       }
        else {
           alert("Incorrect password. Please try again.");
@@ -24,6 +23,15 @@ function goToSignIn() {
   //  document.getElementById("signInForm").reset();
 }
 
+function loginUser() {
+  var isSuccess = true;
+
+  if(isSuccess) {
+    window.location.origin = 'homePage.html';
+  } else {
+    alert('Not Logged In');
+  }
+}
 
 function goToReg() {
   const inputEmail = document.getElementById("inputEmail").value;
@@ -36,16 +44,10 @@ function goToReg() {
   };
   const userJSON = JSON.stringify(user);
   localStorage.setItem(inputUserName, userJSON);
+  if(this.userJSON != null) {
   alert("Registration successful!");
     // document.getElementById("registerForm").reset();
-}
-
-function routeToSignIn() {
-  window.alert("Routed to Login Page");
-}
-
-function routeToReg() {
-  window.alert("Routed to Registration Page");
+  }
 }
 
 
