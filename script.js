@@ -1,54 +1,54 @@
-function goToSignIn() {
-  const inputUserName = document.getElementById("inputUserName").value;
-  const inputPassword = document.getElementById("inputPassword").value;
-  const userData = localStorage.getItem(inputUserName);
+// function goToSignIn() {
+//   const inputUserName = document.getElementById("inputUserName").value;
+//   const inputPassword = document.getElementById("inputPassword").value;
+//   const userData = localStorage.getItem(inputUserName);
 
-  // if (em === 'ram@gmail.com' && inputPassword === 1111111111) {
-  //   window.location.replace('./userData.html');
-  //       alert("Login successful!");
-  //   }
+//   // if (em === 'ram@gmail.com' && inputPassword === 1111111111) {
+//   //   window.location.replace('./userData.html');
+//   //       alert("Login successful!");
+//   //   }
 
 
-  if (userData) {
-      const user = JSON.parse(userData);
-    if (inputPassword == user.inputPassword) {
-        this.loginUser();
-      }
-       else {
-          alert("Incorrect password. Please try again.");
-      }
-  } else {
-      alert("User not found. Please register first.");
-  }
-  //  document.getElementById("signInForm").reset();
-}
+//   if (userData) {
+//       const user = JSON.parse(userData);
+//     if (inputPassword == user.inputPassword) {
+//         this.loginUser();
+//       }
+//        else {
+//           alert("Incorrect password. Please try again.");
+//       }
+//   } else {
+//       alert("User not found. Please register first.");
+//   }
+//   //  document.getElementById("signInForm").reset();
+// }
 
-function loginUser() {
-  var isSuccess = true;
+// function loginUser() {
+//   var isSuccess = true;
 
-  if(isSuccess) {
-    window.location.origin = 'homePage.html';
-  } else {
-    alert('Not Logged In');
-  }
-}
+//   if(isSuccess) {
+//     window.location.replace = 'homePage.html';
+//   } else {
+//     alert('Not Logged In');
+//   }
+// }
 
-function goToReg() {
-  const inputEmail = document.getElementById("inputEmail").value;
-  const inputUserName = document.getElementById("inputUserName").value;
-  const inputPassword = document.getElementById("inputPassword").value;
-  const user = {
-      inputEmail: inputEmail,
-      inputUserName: inputUserName,
-      inputPassword: inputPassword
-  };
-  const userJSON = JSON.stringify(user);
-  localStorage.setItem(inputUserName, userJSON);
-  if(this.userJSON != null) {
-  alert("Registration successful!");
-    // document.getElementById("registerForm").reset();
-  }
-}
+// // function goToReg() {
+// //   const inputEmail = document.getElementById("inputEmail").value;
+//   const inputUserName = document.getElementById("inputUserName").value;
+//   const inputPassword = document.getElementById("inputPassword").value;
+//   const user = {
+//       inputEmail: inputEmail,
+//       inputUserName: inputUserName,
+//       inputPassword: inputPassword
+//   };
+//   const userJSON = JSON.stringify(user);
+//   localStorage.setItem(inputUserName, userJSON);
+//   if(this.userJSON != null) {
+//   alert("Registration successful!");
+//     // document.getElementById("registerForm").reset();
+//   }
+// }
 
 
 
